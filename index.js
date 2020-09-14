@@ -10,7 +10,7 @@ connectDB()
 server.use(bodyParser.urlencoded({ extended: false }))
 server.use(bodyParser.json())
 server.use(express.json({ extended: false }))
-server.use('/API/filmModel', require('./API/Film'));
+server.use('/api', require('./api/films'));
 
 server.use(function (req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
