@@ -8,6 +8,7 @@
     "start": "cross-env PORT=4000 node index.js",
     "dev": "nodemon index.js"
   },
+  "proxy": "http://localhost:3000/",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/PashaKarlin/Server.git"
