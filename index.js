@@ -19,7 +19,9 @@ server.use(function (req, res, next) {
   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With,X-HTTP-Method-Override, Content-Type, Accept, Version, Authorization, X-XSRF-TOKEN, Content-Type");
   next();
 });
+
+
 server.use(bodyParser.json())
 server.use('/api', require('./api/films'));
-server.listen(config.PORT, () => console.log(`Server started on port ${config.PORT}`))
+server.listen(4000, () => console.log(`Server started on port ${config.PORT}`))
 
