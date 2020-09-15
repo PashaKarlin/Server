@@ -4,9 +4,8 @@
   "description": "server for films",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit ",
-    "start": "cross-env PORT=4000 node index.js",
-    "dev": "nodemon index.js"
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit"
   },
   "proxy": "http://localhost:3000/",
   "repository": {
@@ -27,8 +26,6 @@
     "hapi": "^18.1.0",
     "http": "0.0.1-security",
     "mongodb": "^3.6.2",
-    "mongoose": "^5.10.5",
-    "mysql": "^2.18.1",
-    "nodemon": "^2.0.4"
+    "mongoose": "^5.10.5"
   }
 }
