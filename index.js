@@ -1,14 +1,12 @@
 const bodyParser = require('body-parser');
 const express = require('express');
 const server = express();
-const cors = require('cors')
 
 const config = require('./config')
 const connectDB = require('./Database/Connection')
 
 
 connectDB()
-server.use(cors())
 server.use(bodyParser.urlencoded({ extended: false }))
 server.use(bodyParser.json())
 server.use(express.json({ extended: false }))

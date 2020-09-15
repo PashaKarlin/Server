@@ -21,7 +21,6 @@
   "dependencies": {
     "body-parser": "^1.19.0",
     "brew": "0.0.8",
-    "cors": "^2.8.5",
     "cross-env": "^7.0.2",
     "express": "^4.17.1",
     "hapi": "^18.1.0",
