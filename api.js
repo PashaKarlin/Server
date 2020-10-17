@@ -1,29 +1,29 @@
 const express = require("express");
 const route = express.Router();
-const Film = require('./FilmsSchema');
+const Event = require('./EventsSchema');
 
-route.post("/films", (req, res) => {
+route.post("/events", (req, res) => {
     console.log(req.body)
-    Film.create(req.body)
+    Event.create(req.body)
         .then(film => {
             res.send(film)
         });
 });
 
-route.get('/films',(req,res) => {
-    Film.find({})
+route.get('/events',(req,res) => {
+    Event.find({})
         .then(film => {
             res.send(film)
         })
 });
-route.get('/films/:id', (req,res)=>{
-    Film.findById({_id : req.params.id}, req.body)
+route.get('/events/:id', (req,res)=>{
+    Event.findById({_id : req.params.id}, req.body)
     .then((film)=>{
         res.send(film);
     })
 })
-route.delete("/films/:id", (req, res) => {
-    Film.deleteOne({ _id: req.params.id })
+route.delete("/events/:id", (req, res) => {
+    Event.deleteOne({ _id: req.params.id })
         .then(film => {
             res.send(film)
         });

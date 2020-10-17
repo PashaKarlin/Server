@@ -1,12 +1,12 @@
 const mongoose = require('mongoose');
 
-const FilmsSchema =new mongoose.Schema({
+const EventsSchema =new mongoose.Schema({
     title: String,
     releaseYear: Number,
     format: String,
     stars: Array
 });
 
-const Film = mongoose.model('film',FilmsSchema)
+const Event = mongoose.model('event',EventsSchema)
 
-module.exports = Film;
+module.exports = Event;
