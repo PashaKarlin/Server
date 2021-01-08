@@ -1,10 +1,13 @@
 const mongoose = require('mongoose');
 
 const EventsSchema =new mongoose.Schema({
-    title: String,
-    releaseYear: Number,
-    format: String,
-    stars: Array
+    name : String,
+    type : String,
+    logo : String,
+    description : String,
+    date : String,
+    link : String,
+    location : String
 });
 
 const Event = mongoose.model('event',EventsSchema)
