@@ -29,7 +29,7 @@ server.use(bodyParser.json())
 server.use("/api", require("./api"));
 // server.use(bodyParser.urlencoded({ extended: false }))
 
-server.listen(4000, () => {
-  console.log(`Server started on port 4000`)
+server.listen(5000, () => {
+  console.log(`Server started on port 5000`)
 })
 
